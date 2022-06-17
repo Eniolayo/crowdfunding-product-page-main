@@ -83,6 +83,9 @@ button {
 }
 header {
   background-image: url("./images/image-hero-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
 }
 
 .attribution {
