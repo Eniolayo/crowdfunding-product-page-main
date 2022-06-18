@@ -21,13 +21,51 @@
         }
     }
 
+    @include respond(tab) {
+        display: block;
+        visibility: visible;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        margin-top: 0;
+        
+        &__list{
+            display: flex;
+            gap: 12px;
+
+
+            &--item {
+            
+                &:not(:first-child) {
+                    margin-top: 0;
+                }
+            
+                &-link {
+                    color: white;
+                }
+            }
+        }
+    }
+
 
 }
 
-.header__container {
-    padding-top: 1.5rem;
-    width: 90%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
+.header {
+
+
+    &__container{
+        padding-top: 1.5rem;
+        width: 90%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    @include respond(tab) {
+        &__ham {
+            display: none;
+        }
+    }
 }
