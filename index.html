@@ -10,21 +10,29 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Crowdfunding product page</title>
-    <link rel="stylesheet" href="/sass/main.css"/>
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="header__container">
-        <section class="logo"><img src="/images/logo.svg" alt="logo" /></section>
+        <section class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </section>
 
-        <img src="/images/icon-hamburger.svg" alt="" class="header__ham">
-  
+        <img src="./images/icon-hamburger.svg" alt="" class="header__ham" />
+
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__list--item"><a href="#" class="nav__list--item-link">About</a></li>
-            <li class="nav__list--item"><a href="#" class="nav__list--item-link">Discover</a></li>
-            <li class="nav__list--item"><a href="#" class="nav__list--item-link">Get Started</a></li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">About</a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">Discover</a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">Get Started</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -163,14 +171,14 @@
         </p>
       </div>
       <!-- Selected pledge  start -->
-       <div class="pledge-option">
+      <div class="pledge-option">
         <p>Enter your pledge</p>
         <input type="text" placeholder="$" /> <button>Continue</button>
       </div>
       <!-- Selected pledge end -->
       <!-- Selection modal end -->
       <!-- Success modal start -->
-      <section>
+      <dialog>
         <h2>Thanks for your support!</h2>
         <p>
           Your pledge brings us one step closer to sharing Mastercraft Bamboo
@@ -178,9 +186,8 @@
           completed.
         </p>
         <button>Got it!</button>
-      </section>
+      </dialog>
     </main>
-
     <!-- Success modal end -->
   </body>
 </html>
