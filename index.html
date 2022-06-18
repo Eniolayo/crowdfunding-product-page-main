@@ -3,27 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Crowdfunding product page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/sass/main.css"/>
   </head>
+
   <body>
-    <header>
-      <section class="logo"><img src="./images/logo.svg" alt="logo" /></section>
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Discover</li>
-          <li>Get Started</li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container">
+        <section class="logo"><img src="/images/logo.svg" alt="logo" /></section>
+
+        <img src="/images/icon-hamburger.svg" alt="" class="header__ham">
+  
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list--item"><a href="#" class="nav__list--item-link">About</a></li>
+            <li class="nav__list--item"><a href="#" class="nav__list--item-link">Discover</a></li>
+            <li class="nav__list--item"><a href="#" class="nav__list--item-link">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
