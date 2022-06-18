@@ -6,12 +6,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
 * {
   margin: 0;
 }
+
 /*
   3. Allow percentage-based heights in the application
 */
@@ -19,6 +21,7 @@ html,
 body {
   height: 100%;
 }
+
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -28,6 +31,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
   6. Improve media defaults
 */
@@ -39,6 +43,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
   7. Remove built-in form typography styles
 */
@@ -48,6 +53,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
   8. Avoid text overflows
 */
@@ -60,6 +66,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 /*
   9. Create a root stacking context
 */
@@ -67,31 +74,61 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
 ul {
   list-style: none;
   padding: unset;
 }
+
 button {
   border: unset;
   background-color: unset;
 }
-:root {
-  --Black: hsl(0, 0%, 0%);
-  --Dark-gray: hsl(0, 0%, 48%);
-  --Moderate-cyan: hsl(176, 50%, 47%);
-  --Dark-cyan: hsl(176, 72%, 28%);
-}
+
 header {
-  background-image: url("./images/image-hero-desktop.jpg");
+  background-image: url("/images/image-hero-mobile.jpg");
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 40vh;
+}
+@media (min-width: 700px) {
+  header {
+    background-image: url("/images/image-hero-desktop.jpg");
+    height: 50vh;
+  }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228deg, 45%, 44%);
 }
+
+.nav {
+  display: none;
+  visibility: hidden;
+  margin-top: 1.6rem;
+  background-color: white;
+  padding: 1.3rem 1.1rem;
+  border-radius: 9px;
+}
+.nav__list--item:not(:first-child) {
+  margin-top: 2rem;
+}
+.nav__list--item-link {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header__container {
+  padding-top: 1.5rem;
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

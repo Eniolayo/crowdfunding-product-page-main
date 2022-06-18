@@ -1,0 +1,33 @@
+@use './base' as *;
+.nav {
+    display: none;
+    visibility: hidden;
+    margin-top: 1.6rem;
+    background-color: white;
+    padding: 1.3rem 1.1rem;
+    border-radius: 9px;
+
+    &__list--item{
+        
+        &:not(:first-child){
+            margin-top: 2rem;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $Black;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+
+
+}
+
+.header__container {
+    padding-top: 1.5rem;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+}
